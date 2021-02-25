@@ -1,0 +1,23 @@
+{
+  "name": "module-federation-webworker-test",
+  "version": "0.0.0",
+  "author": "Joe Lynch",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "postinstall": "patch-package",
+    "build": "lerna run --parallel build",
+    "start": "lerna run --parallel start",
+    "serve": "lerna run --parallel serve"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "patch-package": "^6.2.2",
+    "postinstall-postinstall": "^2.1.0"
+  }
+}

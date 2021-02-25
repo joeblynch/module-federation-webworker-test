@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Module Federation Webworker Test</title>
+  </head>
+  <body>
+    <h1>Module Federation Webworker Test</h1>
+    <pre id="messages"></pre>
+    <script>
+      const messagesEl = document.getElementById('messages');
+      const worker = new Worker('main.js');
+      
+      worker.addEventListener('message', ({ data }) => {
+        messagesEl.innerText += `${data}\n`;
+      });
+    </script>
+  </body>
+</html>
