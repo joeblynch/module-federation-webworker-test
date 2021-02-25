@@ -1,6 +1,6 @@
 # Module Federation Webworker Test
 
-Minimal reproduction example to demonstrate error when loading a module federation remote from a webworker script that's
+Minimal reproduction example to demonstrate error [for this issue](https://github.com/webpack/webpack/issues/12780) when loading a module federation remote from a webworker script that's
 built using a `target: 'webworker'` webpack configuration.
 
 **NOTE:** This project uses `patch-package` to apply the `publicPath`
